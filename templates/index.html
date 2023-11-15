@@ -1,1 +1,8 @@
-<h1>Hello, {{ who }}!</h1>
+{% extends "base.html" %}
+
+{% block title %}Главная страничка тест проекта по Джанго{% endblock %}
+
+{% block content %}
+    <h1>Главная страничка</h1>
+    <p>тест проекта по Джанго</p>
+{% endblock %}
