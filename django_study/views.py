@@ -14,3 +14,13 @@ class IndexView(View):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def med_info_view(request, user_id, pet_id):
+    context = {'user_id': user_id, 'pet_id': pet_id}
+    print(context)
+    return render(
+        request,
+        'med_info_template.html',
+        context={'user_id': user_id, 'pet_id': pet_id}
+    )

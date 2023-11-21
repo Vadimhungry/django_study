@@ -25,4 +25,5 @@ urlpatterns = [
     path('articles/', include('django_study.article.urls')),
     path("about/", views.about),
     path("admin/", admin.site.urls),
+    path('users/<int:user_id>/pets/<int:pet_id>/med_info/', views.med_info_view),
 ]
